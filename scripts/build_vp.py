@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-build_vp.py — Static Virtual Platform builder
+build_vp.py — Lean FDP Virtual Platform builder
 ==============================================
-Part of the StaticFDP ecosystem (https://github.com/StaticFDP/staticfdp-vp).
+Part of the Lean FDP ecosystem (https://github.com/LeanFDP/staticfdp-vp).
 
 Reads registered-indexes/*.yaml, fetches each FDP Index's index.ttl,
 and writes a merged federation graph:
@@ -122,14 +122,14 @@ def build_federation_ttl(indexes, base_url, today):
         '@prefix fdp:     <https://w3id.org/fdp/fdp-o#> .',
         f'@prefix :        <{base_url}/vp/> .',
         '',
-        f'# StaticFDP Virtual Platform — generated {today}',
+        f'# Lean FDP Virtual Platform — generated {today}',
         '',
         '# ── Virtual Platform root ────────────────────────────────────────────────────',
         '',
         f'<{base_url}/vp/>',
         '    a                    fdp:MetadataService ;',
         f'    dcterms:title        "{cfg("virtual_platform","title","My Virtual Platform")}"@en ;',
-        '    dcterms:description  "A StaticFDP Virtual Platform. Edit vp-config.yaml to customise."@en ;',
+        '    dcterms:description  "A Lean FDP Virtual Platform. Edit vp-config.yaml to customise."@en ;',
         f'    dcterms:issued       "{today}"^^xsd:date ;',
         f'    dcterms:modified     "{today}"^^xsd:date ;',
         f'    dcterms:license      <{cfg("virtual_platform","license","https://creativecommons.org/licenses/by/4.0/")}> ;',
@@ -271,7 +271,7 @@ def build_vp_html(indexes, base_url, today):
     <h2>Aggregated FDP Indexes</h2>
     <p>These FDP Indexes are harvested daily. Each index contains multiple registered FAIR Data Points.</p>
     <div class="card-grid">
-      {cards if cards else '<p style="color:#9ca3af;margin-top:.8rem;">No indexes registered yet. <a href="https://github.com/StaticFDP/staticfdp-vp/issues/new?template=register-index.yml">Register yours →</a></p>'}
+      {cards if cards else '<p style="color:#9ca3af;margin-top:.8rem;">No indexes registered yet. <a href="https://github.com/LeanFDP/staticfdp-vp/issues/new?template=register-index.yml">Register yours →</a></p>'}
     </div>
   </section>
   <section>
@@ -288,12 +288,12 @@ for s, p, o in g:
   </section>
   <section>
     <h2>Register an FDP Index</h2>
-    <p>Open a <a href="https://github.com/StaticFDP/staticfdp-vp/issues/new?template=register-index.yml">Register FDP Index issue</a> with your index URL and it will be included in the next aggregation run.</p>
+    <p>Open a <a href="https://github.com/LeanFDP/staticfdp-vp/issues/new?template=register-index.yml">Register FDP Index issue</a> with your index URL and it will be included in the next aggregation run.</p>
   </section>
 </main>
 <footer>
-  StaticFDP Ecosystem &nbsp;·&nbsp;
-  <a href="https://github.com/StaticFDP/staticfdp-vp">GitHub</a> &nbsp;·&nbsp;
+  Lean FDP Ecosystem &nbsp;·&nbsp;
+  <a href="https://github.com/LeanFDP/staticfdp-vp">GitHub</a> &nbsp;·&nbsp;
   <a href="https://codeberg.org/StaticFDP/staticfdp-vp">Codeberg</a>
 </footer>
 </body>
@@ -307,7 +307,7 @@ def main():
     today    = str(date.today())
     timeout  = int(cfg('aggregate', 'timeout_seconds', 30))
 
-    print(f'StaticFDP VP builder — {today}')
+    print(f'Lean FDP VP builder — {today}')
     print(f'Base URL: {base_url}')
 
     indexes = load_registered_indexes()
