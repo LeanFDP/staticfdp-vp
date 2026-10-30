@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# setup.sh — StaticFDP Virtual Platform interactive setup
+# setup.sh — Lean FDP Virtual Platform interactive setup
 # ========================================================
-# Part of the StaticFDP ecosystem (https://github.com/StaticFDP)
+# Part of the Lean FDP ecosystem (https://github.com/LeanFDP)
 set -euo pipefail
 
 G='\033[0;32m'; B='\033[0;34m'; Y='\033[1;33m'; R='\033[0m'
@@ -9,7 +9,7 @@ G='\033[0;32m'; B='\033[0;34m'; Y='\033[1;33m'; R='\033[0m'
 echo -e "${G}"
 cat << 'EOF'
   ╔══════════════════════════════════════════════════════╗
-  ║       StaticFDP Virtual Platform — setup             ║
+  ║       Lean FDP Virtual Platform — setup              ║
   ║  Federated FDP discovery on static hosting           ║
   ╚══════════════════════════════════════════════════════╝
 EOF

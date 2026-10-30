@@ -1,10 +1,10 @@
 # staticfdp-vp
 
 > [!NOTE]
-> **Experimental.** This is the only Virtual Platform implementation in StaticFDP, and it stays. In the [StaticFDP consolidation](https://github.com/StaticFDP/.github/blob/main/profile/README.md#which-repository-does-what), the layers are: publish with the [FDP ecosystem template](https://github.com/StaticFDP/fdp-ecosystem-template), index with [fdp-index](https://github.com/StaticFDP/fdp-index), aggregate indexes here. Next step: harvest fdp-index's `index.ttl`.
+> **Experimental.** This is the only Virtual Platform implementation in Lean FDP, and it stays. In the [Lean FDP consolidation](https://github.com/LeanFDP/.github/blob/main/profile/README.md#which-repository-does-what), the layers are: publish with the [FDP ecosystem template](https://github.com/LeanFDP/fdp-ecosystem-template), index with [fdp-index](https://github.com/LeanFDP/fdp-index), aggregate indexes here. Next step: harvest fdp-index's `index.ttl`.
 
-A **Static Virtual Platform** — the third layer of the StaticFDP ecosystem
-([GitHub](https://github.com/StaticFDP/staticfdp) · [Codeberg](https://codeberg.org/StaticFDP/staticfdp)).
+A **Lean FDP Virtual Platform** — the third layer of the Lean FDP ecosystem
+([GitHub](https://github.com/LeanFDP/staticfdp) · [Codeberg](https://codeberg.org/StaticFDP/staticfdp)).
 
 A Virtual Platform (VP) is a federated discovery hub that aggregates multiple
 FDP Indexes into a single browsable and machine-readable catalog. Data stays
@@ -14,13 +14,13 @@ No dedicated server required.
 
 ---
 
-## Part of the StaticFDP Ecosystem
+## Part of the Lean FDP Ecosystem
 
 | Repository | GitHub | Codeberg | Layer |
 |---|---|---|---|
-| staticfdp | [github.com/StaticFDP/staticfdp](https://github.com/StaticFDP/staticfdp) | [codeberg.org/StaticFDP/staticfdp](https://codeberg.org/StaticFDP/staticfdp) | FAIR Data Point |
-| staticfdp-index | [github.com/StaticFDP/staticfdp-index](https://github.com/StaticFDP/staticfdp-index) | [codeberg.org/StaticFDP/staticfdp-index](https://codeberg.org/StaticFDP/staticfdp-index) | FDP Index |
-| **staticfdp-vp** ← you are here | [github.com/StaticFDP/staticfdp-vp](https://github.com/StaticFDP/staticfdp-vp) | [codeberg.org/StaticFDP/staticfdp-vp](https://codeberg.org/StaticFDP/staticfdp-vp) | Virtual Platform |
+| staticfdp | [github.com/LeanFDP/staticfdp](https://github.com/LeanFDP/staticfdp) | [codeberg.org/StaticFDP/staticfdp](https://codeberg.org/StaticFDP/staticfdp) | FAIR Data Point |
+| staticfdp-index | [github.com/LeanFDP/staticfdp-index](https://github.com/LeanFDP/staticfdp-index) | [codeberg.org/StaticFDP/staticfdp-index](https://codeberg.org/StaticFDP/staticfdp-index) | FDP Index |
+| **staticfdp-vp** ← you are here | [github.com/LeanFDP/staticfdp-vp](https://github.com/LeanFDP/staticfdp-vp) | [codeberg.org/StaticFDP/staticfdp-vp](https://codeberg.org/StaticFDP/staticfdp-vp) | Virtual Platform |
 
 ---
 
@@ -59,7 +59,7 @@ flowchart TD
 
 **GitHub:**
 ```bash
-git clone https://github.com/StaticFDP/staticfdp-vp
+git clone https://github.com/LeanFDP/staticfdp-vp
 cd staticfdp-vp
 bash scripts/setup.sh          # configure GitHub / Codeberg / both
 ```

@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: StaticFDP Virtual Platform — Static FDP Virtual Platform
+title: Lean FDP Virtual Platform
 abstract: >
   A static-hosting implementation of the Virtual Platform layer of the FAIR Data
   Point ecosystem. Aggregates multiple FDP Indexes into a federated discovery hub,
   served as static RDF + HTML via GitHub Pages or Codeberg Pages, with no server required.
 license: MIT
-repository-code: https://github.com/StaticFDP/staticfdp-vp
+repository-code: https://github.com/LeanFDP/staticfdp-vp
 url: https://codeberg.org/StaticFDP/staticfdp-vp
 date-released: "2026-04-16"
 version: "0.1.0"

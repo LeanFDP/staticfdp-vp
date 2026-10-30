@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register an FDP Index — StaticFDP Virtual Platform</title>
+  <title>Register an FDP Index — Lean FDP Virtual Platform</title>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.6;color:#1a1a2e;background:#faf5ff}
@@ -89,9 +89,9 @@
   "logo_alt":     "Logo",
   "header_bg":    "linear-gradient(135deg,#4c1d95 0%,#7c3aed 60%,#1a6b5a 100%)",
   "accent_color": "#7c3aed",
-  "footer_text":  "StaticFDP Ecosystem",
+  "footer_text":  "Lean FDP Ecosystem",
   "footer_links": [
-    { "label": "GitHub",   "url": "https://github.com/StaticFDP/staticfdp-vp" },
+    { "label": "GitHub",   "url": "https://github.com/LeanFDP/staticfdp-vp" },
     { "label": "Codeberg", "url": "https://codeberg.org/StaticFDP/staticfdp-vp" }
   ],
   "worker_url":  "",
@@ -249,8 +249,8 @@
         <div class="info-links" style="margin-top:16px">
           <strong style="font-size:12px;color:#6b7280;display:block;margin-bottom:6px">RESOURCES</strong>
           <a href="https://specs.fairdatapoint.org/" target="_blank">FDP specification ↗</a>
-          <a href="https://github.com/StaticFDP/staticfdp-vp" target="_blank">VP source code ↗</a>
-          <a href="https://github.com/StaticFDP/staticfdp-index" target="_blank">Build your own FDP Index ↗</a>
+          <a href="https://github.com/LeanFDP/staticfdp-vp" target="_blank">VP source code ↗</a>
+          <a href="https://github.com/LeanFDP/staticfdp-index" target="_blank">Build your own FDP Index ↗</a>
         </div>
       </div>
     </div>
@@ -412,7 +412,7 @@ function preview() {
 
   document.getElementById('preview-body').textContent = lines;
 
-  const ghBase = 'https://github.com/StaticFDP/staticfdp-vp/issues/new';
+  const ghBase = 'https://github.com/LeanFDP/staticfdp-vp/issues/new';
   const cbBase = 'https://codeberg.org/StaticFDP/staticfdp-vp/issues/new';
   const iTitle = encodeURIComponent(`[INDEX-REGISTRATION] ${title === '_Index name_' ? '' : title}`);
   const iBody  = encodeURIComponent(lines);
@@ -526,9 +526,9 @@ preview();
 </script>
 
 <footer id="site-footer" style="background:#1a1a2e;color:rgba(255,255,255,.5);padding:14px 24px;font-size:12px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
-  <span id="footer-text">StaticFDP Ecosystem</span>
+  <span id="footer-text">Lean FDP Ecosystem</span>
   <span id="footer-links">
-    <a href="https://github.com/StaticFDP/staticfdp-vp" target="_blank" style="color:rgba(255,255,255,.6);margin-left:12px">GitHub</a>
+    <a href="https://github.com/LeanFDP/staticfdp-vp" target="_blank" style="color:rgba(255,255,255,.6);margin-left:12px">GitHub</a>
     <a href="https://codeberg.org/StaticFDP/staticfdp-vp" target="_blank" style="color:rgba(255,255,255,.6);margin-left:12px">Codeberg</a>
   </span>
 </footer>
